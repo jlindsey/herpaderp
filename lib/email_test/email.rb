@@ -85,7 +85,7 @@ module EmailTest
     def parse_headers!
       buffer = ''
 
-      self.raw.each_line do |line|
+      @raw.each_line do |line|
         # Break out of parsing headers
         if (@@boundary.is_a?(::Regexp) and line =~ @@boundary) or
            (@@boundary.is_a?(::String) and line == @@boundary)
