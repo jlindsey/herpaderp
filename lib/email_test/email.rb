@@ -35,7 +35,8 @@ module EmailTest
     #
     # @param [String] raw_str The raw email input
     # 
-    # @see {#parse!}
+    # @see {#parse_headers!}
+    # @see {#parse_body!}
     #
     # @author Josh Lindsey
     def initialize raw_str
