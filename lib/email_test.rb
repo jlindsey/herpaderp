@@ -4,5 +4,8 @@
 #
 # @author Josh Lindsey
 #
-module EmailTest; end
+module EmailTest
+  require 'email_test/email'
+
+end
 
