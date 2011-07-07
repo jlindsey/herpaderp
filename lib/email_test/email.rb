@@ -18,9 +18,6 @@ module EmailTest
     # Used in {#method_missing} and {#respond_to?}.
     ConvertKey = ->(h){ h.key.downcase.gsub('-', '_').to_sym }
 
-    # The default email boundary is just an empty line
-    @@boundary = /^\s?$/
-
     ## @return [String] The raw email string before parsing
     attr_reader :raw
 
@@ -40,7 +37,10 @@ module EmailTest
     #
     # @author Josh Lindsey
     def initialize raw_str
-      @raw = raw_str
+      # The default email boundary is just an empty line
+      @boundary = /^\s?$/
+
+      @raw = raw_str.strip
       @headers = []
 
       parse_headers!
@@ -92,8 +92,8 @@ module EmailTest
 
       @raw.each_line do |line|
         # Break out of parsing headers if we hit the boundary
-        if (@@boundary.is_a?(::Regexp) and line =~ @@boundary) or
-           (@@boundary.is_a?(::String) and line == @@boundary)
+        if (@boundary.is_a?(::Regexp) and line =~ @boundary) or
+           (@boundary.is_a?(::String) and line == @boundary)
           @headers << parse_header(buffer.dup)
           break
         end
@@ -103,7 +103,7 @@ module EmailTest
         if line =~ /^\s+/ or buffer.empty?
           buffer << line
         else
-          # TODO: add in a Content-Type boundary check here and change the @@boundary var
+          # TODO: add in a Content-Type boundary check here and change the @boundary var
           @headers << parse_header(buffer.dup)
           buffer.clear
           buffer << line
@@ -119,10 +119,10 @@ module EmailTest
     def parse_body!
       offset = nil
 
-      if @@boundary.is_a?(::String)
-        offset = @raw.index @@boundary
+      if @boundary.is_a?(::String)
+        offset = @raw.index @boundary
       else
-        offset = @raw =~ @@boundary
+        offset = @raw =~ @boundary
       end
 
       raise "Unable to parse email body" if offset.nil? or offset <= 0

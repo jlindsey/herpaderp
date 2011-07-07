@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe EmailTest::Email do
   before(:each) do
-    @simple_message = File.read(File.join(EmailsDir, 'simple_message.txt'))
+    @simple_message = File.read(File.join(EmailsDir, 'simple_message.txt')).strip
     @email = EmailTest::Email.new @simple_message
   end
 
@@ -62,6 +62,11 @@ describe EmailTest::Email do
   it "detects and creates the specific header class correctly for Content-Type" do
     @email.headers.find { |h| h.key == "Content-Type" }.should \
       be_a(EmailTest::Headers::ContentType)
+  end
+
+  it "changes the @@boundary variable when a Content-Type with a boundary is parsed" do
+    @email = EmailTest::Email.new File.read('emails/otf_thread.txt')
+    @email.instance_variable_get(:@boundary).should == "------------090807010703040106060608"
   end
 
   it "implements the .parse_thread method and return an array of parsed emails"
