@@ -56,6 +56,12 @@ describe EmailTest::Email do
     @email.should respond_to(:to)
     @email.should respond_to(:subject)
     @email.should respond_to(:return_path)
+    @email.should respond_to(:content_type)
+  end
+
+  it "detects and creates the specific header class correctly for Content-Type" do
+    @email.headers.find { |h| h.key == "Content-Type" }.should \
+      be_a(EmailTest::Headers::ContentType)
   end
 
   it "implements the .parse_thread method and return an array of parsed emails"

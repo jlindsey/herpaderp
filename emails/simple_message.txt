@@ -11,6 +11,7 @@ Received-SPF: neutral (google.com: 174.129.1.152 is neither permitted nor denied
 Authentication-Results: mx.google.com; spf=neutral (google.com: 174.129.1.152 is neither permitted nor denied by best guess record for domain of nagios@ops.cloudspace.com) smtp.mail=nagios@ops.cloudspace.com
 Received: by domU-12-31-39-09-78-84.compute-1.internal (Postfix, from userid 108)
   id 2939B101C4; Thu,  7 Jul 2011 18:04:38 +0000 (UTC)
+Content-Type: text/plain
 To: josh@cloudspace.com
 Subject: chsfirst.org Load Average CRITICAL!
 Message-Id: <20110707180438.2939B101C4@domU-12-31-39-09-78-84.compute-1.internal>

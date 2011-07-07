@@ -154,9 +154,9 @@ module EmailTest
     # Parse and return the class convention name for a Header key.
     #
     # @param [String] key The Header key
-    # @return [String] The capitalized class name
+    # @return [Symbol] The capitalized class name
     def get_class_name_from_key key
-      key.split('-').map(&:capitalize).join
+      key.split('-').map(&:capitalize).join.to_sym
     end
   end
 end
