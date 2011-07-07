@@ -1,4 +1,9 @@
 module EmailTest
+
+  ##
+  # Namespace module for all Header classes.
+  #
+  # @author Josh Lindsey
   module Headers
 
     ##
