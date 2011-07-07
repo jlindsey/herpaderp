@@ -1,5 +1,9 @@
 module EmailTest
   require 'email_test/header'
+  # Require each header extension
+  Dir["#{File.dirname(__FILE__)}/headers/*.rb"].each do|h| 
+    require "email_test/headers/#{File.basename(h)}"
+  end
 
   ##
   # Main entry point class to the lib. Encapsulates a single message from an
@@ -15,7 +19,7 @@ module EmailTest
     ConvertKey = ->(h){ h.key.downcase.gsub('-', '_').to_sym }
 
     # The default email boundary is just an empty line
-    @@boundary = /^(?:\s+)?$/
+    @@boundary = /^\s?$/
 
     ## @return [String] The raw email string before parsing
     attr_reader :raw
@@ -86,10 +90,10 @@ module EmailTest
       buffer = ''
 
       @raw.each_line do |line|
-        # Break out of parsing headers
+        # Break out of parsing headers if we hit the boundary
         if (@@boundary.is_a?(::Regexp) and line =~ @@boundary) or
            (@@boundary.is_a?(::String) and line == @@boundary)
-          @headers << parse_header(buffer)
+          @headers << parse_header(buffer.dup)
           break
         end
 
@@ -99,7 +103,7 @@ module EmailTest
           buffer << line
         else
           # TODO: add in a Content-Type boundary check here and change the @@boundary var
-          @headers << parse_header(buffer)
+          @headers << parse_header(buffer.dup)
           buffer.clear
           buffer << line
         end
@@ -136,13 +140,23 @@ module EmailTest
     # @return [EmailTest::Header] Either the {Header} instance, or some instance that extends it
     def parse_header header_str
       parsed = Headers::Header.new header_str
+      class_name = get_class_name_from_key parsed.key
 
-      if EmailTest::Headers.constants.include? parsed.key
-        header_parser = EmailTest::Headers.const_get parsed.key
+      if EmailTest::Headers.constants.include? class_name
+        header_parser = EmailTest::Headers.const_get class_name
         parsed = header_parser.new header_str
       end
 
       parsed
+    end
+
+    ##
+    # Parse and return the class convention name for a Header key.
+    #
+    # @param [String] key The Header key
+    # @return [String] The capitalized class name
+    def get_class_name_from_key key
+      key.split('-').map(&:capitalize).join
     end
   end
 end
