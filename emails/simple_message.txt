@@ -1,0 +1,20 @@
+Delivered-To: josh@cloudspace.com
+Received: by 10.68.57.41 with SMTP id f9cs420620pbq;
+        Thu, 7 Jul 2011 11:04:40 -0700 (PDT)
+Received: by 10.224.205.202 with SMTP id fr10mr829395qab.327.1310061879803;
+        Thu, 07 Jul 2011 11:04:39 -0700 (PDT)
+Return-Path: <nagios@ops.cloudspace.com>
+Received: from domU-12-31-39-09-78-84.compute-1.internal (ec2-174-129-1-152.compute-1.amazonaws.com [174.129.1.152])
+        by mx.google.com with ESMTP id i4si1725702qcb.84.2011.07.07.11.04.38;
+        Thu, 07 Jul 2011 11:04:38 -0700 (PDT)
+Received-SPF: neutral (google.com: 174.129.1.152 is neither permitted nor denied by best guess record for domain of nagios@ops.cloudspace.com) client-ip=174.129.1.152;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 174.129.1.152 is neither permitted nor denied by best guess record for domain of nagios@ops.cloudspace.com) smtp.mail=nagios@ops.cloudspace.com
+Received: by domU-12-31-39-09-78-84.compute-1.internal (Postfix, from userid 108)
+  id 2939B101C4; Thu,  7 Jul 2011 18:04:38 +0000 (UTC)
+To: josh@cloudspace.com
+Subject: chsfirst.org Load Average CRITICAL!
+Message-Id: <20110707180438.2939B101C4@domU-12-31-39-09-78-84.compute-1.internal>
+Date: Thu,  7 Jul 2011 18:04:38 +0000 (UTC)
+From: nagios@ops.cloudspace.com
+
+CRITICAL - load average: 18.01, 17.73, 17.38
