@@ -1,0 +1,151 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: josh@cloudspace.com
+Received: by 10.68.57.41 with SMTP id f9cs240292pbq;
+        Tue, 5 Jul 2011 08:16:46 -0700 (PDT)
+Received: by 10.236.116.131 with SMTP id g3mr7687597yhh.384.1309879005822;
+        Tue, 05 Jul 2011 08:16:45 -0700 (PDT)
+Return-Path: <theresa@cloudspace.com>
+Received: from mail-yx0-f181.google.com (mail-yx0-f181.google.com [209.85.213.181])
+        by mx.google.com with ESMTPS id q66si8993516yhj.4.2011.07.05.08.16.44
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Tue, 05 Jul 2011 08:16:44 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning theresa@cloudspace.com does not designate 209.85.213.181 as permitted sender) client-ip=209.85.213.181;
+Authentication-Results: mx.google.com; spf=softfail (google.com: domain of transitioning theresa@cloudspace.com does not designate 209.85.213.181 as permitted sender) smtp.mail=theresa@cloudspace.com
+Received: by yxi13 with SMTP id 13so1177594yxi.12
+        for <josh@cloudspace.com>; Tue, 05 Jul 2011 08:16:44 -0700 (PDT)
+Received: by 10.91.50.12 with SMTP id c12mr6165780agk.171.1309879004362;
+        Tue, 05 Jul 2011 08:16:44 -0700 (PDT)
+Return-Path: <theresa@cloudspace.com>
+Received: from [10.0.1.13] (rrcs-71-43-23-18.se.biz.rr.com [71.43.23.18])
+        by mx.google.com with ESMTPS id p50sm285648yhj.70.2011.07.05.08.16.42
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Tue, 05 Jul 2011 08:16:43 -0700 (PDT)
+Message-ID: <4E132ADB.8000204@cloudspace.com>
+Date: Tue, 05 Jul 2011 11:16:43 -0400
+From: Theresa Sampson <theresa@cloudspace.com>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.18) Gecko/20110616 Thunderbird/3.1.11
+MIME-Version: 1.0
+To: Josh Lindsey <josh@cloudspace.com>
+Subject: Re: OTF
+References: <4E132A0F.7080005@cloudspace.com> <CAKMS78C2Sw2=GxbvUn=6wryu2ACMWFqBdRDA39_ZSEVOLSYVXA@mail.gmail.com>  <4E132A82.4000409@cloudspace.com> <CAKMS78BjwAQkvnCbFGoQRyWVVw+wiNOx0Uck8UhMpxnOzoLaHg@mail.gmail.com>
+In-Reply-To: <CAKMS78BjwAQkvnCbFGoQRyWVVw+wiNOx0Uck8UhMpxnOzoLaHg@mail.gmail.com>
+Content-Type: multipart/alternative;
+ boundary="------------090807010703040106060608"
+
+This is a multi-part message in MIME format.
+--------------090807010703040106060608
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+K, thanks!
+
+On 7/5/2011 11:16 AM, Josh Lindsey wrote:
+>
+> Still working on the Nagios Automation so I guess half.
+>
+> On Jul 5, 2011 11:15 AM, "Theresa Sampson" <theresa@cloudspace.com 
+> <mailto:theresa@cloudspace.com>> wrote:
+> > All half days or full?
+> >
+> > On 7/5/2011 11:14 AM, Josh Lindsey wrote:
+> >>
+> >> Yes, every day.
+> >>
+> >> On Jul 5, 2011 11:13 AM, "Theresa Sampson" <theresa@cloudspace.com 
+> <mailto:theresa@cloudspace.com>
+> >> <mailto:theresa@cloudspace.com <mailto:theresa@cloudspace.com>>> wrote:
+> >> > Hey, did you work on OTF last week? if so, what days?
+> >> >
+> >> > --
+> >> > Cloudspace.com <http://www.cloudspace.com>
+> >> > Theresa Sampson
+> >> > Business Director
+> >> > Office: 877.823.8808
+> >> >
+> >> > 3403 Technological Ave, Suite 2
+> >> >
+> >> 
+> <http://maps.google.com/maps?client=safari&rls=en-us&q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&oe=UTF-8&um=1&ie=UTF-8&split=0&gl=us&ei=fZFfSrLULYyBtweZqpjgAw&sa=X&oi=geocode_result&ct=title&resnum=1 
+> <http://maps.google.com/maps?client=safari&rls=en-us&q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&oe=UTF-8&um=1&ie=UTF-8&split=0&gl=us&ei=fZFfSrLULYyBtweZqpjgAw&sa=X&oi=geocode_result&ct=title&resnum=1> 
+>
+> >> 
+> <http://maps.google.com/maps?client=safari&rls=en-us&q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&oe=UTF-8&um=1&ie=UTF-8&split=0&gl=us&ei=fZFfSrLULYyBtweZqpjgAw&sa=X&oi=geocode_result&ct=title&resnum=1 
+> <http://maps.google.com/maps?client=safari&rls=en-us&q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&oe=UTF-8&um=1&ie=UTF-8&split=0&gl=us&ei=fZFfSrLULYyBtweZqpjgAw&sa=X&oi=geocode_result&ct=title&resnum=1>>>
+> >> >
+> >> > Orlando, FL 32817
+> >> >
+> >> 
+> <http://maps.google.com/maps?client=safari&rls=en-us&q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&oe=UTF-8&um=1&ie=UTF-8&split=0&gl=us&ei=fZFfSrLULYyBtweZqpjgAw&sa=X&oi=geocode_result&ct=title&resnum=1 
+> <http://maps.google.com/maps?client=safari&rls=en-us&q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&oe=UTF-8&um=1&ie=UTF-8&split=0&gl=us&ei=fZFfSrLULYyBtweZqpjgAw&sa=X&oi=geocode_result&ct=title&resnum=1> 
+>
+> >> 
+> <http://maps.google.com/maps?client=safari&rls=en-us&q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&oe=UTF-8&um=1&ie=UTF-8&split=0&gl=us&ei=fZFfSrLULYyBtweZqpjgAw&sa=X&oi=geocode_result&ct=title&resnum=1 
+> <http://maps.google.com/maps?client=safari&rls=en-us&q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&oe=UTF-8&um=1&ie=UTF-8&split=0&gl=us&ei=fZFfSrLULYyBtweZqpjgAw&sa=X&oi=geocode_result&ct=title&resnum=1>>>
+> >> >
+
+--------------090807010703040106060608
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1"
+      http-equiv="Content-Type">
+  </head>
+  <body text="#000000" bgcolor="#ffffff">
+    K, thanks!<br>
+    <br>
+    On 7/5/2011 11:16 AM, Josh Lindsey wrote:
+    <blockquote
+cite="mid:CAKMS78BjwAQkvnCbFGoQRyWVVw+wiNOx0Uck8UhMpxnOzoLaHg@mail.gmail.com"
+      type="cite">
+      <p>Still working on the Nagios Automation so I guess half. </p>
+      <div class="gmail_quote">On Jul 5, 2011 11:15 AM, "Theresa
+        Sampson" &lt;<a moz-do-not-send="true"
+          href="mailto:theresa@cloudspace.com">theresa@cloudspace.com</a>&gt;
+        wrote:<br type="attribution">
+        &gt; All half days or full?<br>
+        &gt; <br>
+        &gt; On 7/5/2011 11:14 AM, Josh Lindsey wrote:<br>
+        &gt;&gt;<br>
+        &gt;&gt; Yes, every day.<br>
+        &gt;&gt;<br>
+        &gt;&gt; On Jul 5, 2011 11:13 AM, "Theresa Sampson" &lt;<a
+          moz-do-not-send="true" href="mailto:theresa@cloudspace.com">theresa@cloudspace.com</a>
+        <br>
+        &gt;&gt; &lt;mailto:<a moz-do-not-send="true"
+          href="mailto:theresa@cloudspace.com">theresa@cloudspace.com</a>&gt;&gt;
+        wrote:<br>
+        &gt;&gt; &gt; Hey, did you work on OTF last week? if so, what
+        days?<br>
+        &gt;&gt; &gt;<br>
+        &gt;&gt; &gt; --<br>
+        &gt;&gt; &gt; Cloudspace.com &lt;<a moz-do-not-send="true"
+          href="http://www.cloudspace.com">http://www.cloudspace.com</a>&gt;<br>
+        &gt;&gt; &gt; Theresa Sampson<br>
+        &gt;&gt; &gt; Business Director<br>
+        &gt;&gt; &gt; Office: 877.823.8808<br>
+        &gt;&gt; &gt;<br>
+        &gt;&gt; &gt; 3403 Technological Ave, Suite 2<br>
+        &gt;&gt; &gt; <br>
+        &gt;&gt; &lt;<a moz-do-not-send="true"
+href="http://maps.google.com/maps?client=safari&amp;rls=en-us&amp;q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&amp;oe=UTF-8&amp;um=1&amp;ie=UTF-8&amp;split=0&amp;gl=us&amp;ei=fZFfSrLULYyBtweZqpjgAw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1">http://maps.google.com/maps?client=safari&amp;rls=en-us&amp;q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&amp;oe=UTF-8&amp;um=1&amp;ie=UTF-8&amp;split=0&amp;gl=us&amp;ei=fZFfSrLULYyBtweZqpjgAw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1</a>
+        <br>
+        &gt;&gt; &lt;<a moz-do-not-send="true"
+href="http://maps.google.com/maps?client=safari&amp;rls=en-us&amp;q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&amp;oe=UTF-8&amp;um=1&amp;ie=UTF-8&amp;split=0&amp;gl=us&amp;ei=fZFfSrLULYyBtweZqpjgAw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1">http://maps.google.com/maps?client=safari&amp;rls=en-us&amp;q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&amp;oe=UTF-8&amp;um=1&amp;ie=UTF-8&amp;split=0&amp;gl=us&amp;ei=fZFfSrLULYyBtweZqpjgAw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1</a>&gt;&gt;<br>
+        &gt;&gt; &gt;<br>
+        &gt;&gt; &gt; Orlando, FL 32817<br>
+        &gt;&gt; &gt; <br>
+        &gt;&gt; &lt;<a moz-do-not-send="true"
+href="http://maps.google.com/maps?client=safari&amp;rls=en-us&amp;q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&amp;oe=UTF-8&amp;um=1&amp;ie=UTF-8&amp;split=0&amp;gl=us&amp;ei=fZFfSrLULYyBtweZqpjgAw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1">http://maps.google.com/maps?client=safari&amp;rls=en-us&amp;q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&amp;oe=UTF-8&amp;um=1&amp;ie=UTF-8&amp;split=0&amp;gl=us&amp;ei=fZFfSrLULYyBtweZqpjgAw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1</a>
+        <br>
+        &gt;&gt; &lt;<a moz-do-not-send="true"
+href="http://maps.google.com/maps?client=safari&amp;rls=en-us&amp;q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&amp;oe=UTF-8&amp;um=1&amp;ie=UTF-8&amp;split=0&amp;gl=us&amp;ei=fZFfSrLULYyBtweZqpjgAw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1">http://maps.google.com/maps?client=safari&amp;rls=en-us&amp;q=3403+Technological+Ave,+Suite+2+Orlando,+FL+32817+United+States&amp;oe=UTF-8&amp;um=1&amp;ie=UTF-8&amp;split=0&amp;gl=us&amp;ei=fZFfSrLULYyBtweZqpjgAw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1</a>&gt;&gt;<br>
+        &gt;&gt; &gt;<br>
+      </div>
+    </blockquote>
+  </body>
+</html>
+
+--------------090807010703040106060608--
