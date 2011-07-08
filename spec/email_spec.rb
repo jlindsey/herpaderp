@@ -76,5 +76,7 @@ describe EmailTest::Email do
       b.should be_a(EmailTest::Email)
     end
   end
+
+  it "should parse the quoted message in a message thread out of the main email body"
 end
 

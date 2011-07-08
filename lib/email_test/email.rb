@@ -1,5 +1,6 @@
 module EmailTest
   require 'email_test/header'
+  require 'email_test/thread'
   # Require each header extension
   Dir["#{File.dirname(__FILE__)}/headers/*.rb"].each do|h| 
     require "email_test/headers/#{File.basename(h)}"
@@ -11,8 +12,12 @@ module EmailTest
   # user will be using the {.parse_thread} class-level method to return an
   # array of parsed messages.
   #
-  # @author Josh Lindsey
+  # @TODO I don't like the way the {#parse_body!} works right now for multipart emails.
+  #       It would be much better to have another container class, or to have it work
+  #       more consistantly with the plaintext emails (ie. sometimes the body is
+  #       a string, sometimes an Array; that's bad – pricipal of least surprise).
   #
+  # @author Josh Lindsey
   class Email
     # Lambda to convert header string keys into symbols.
     # Used in {#method_missing} and {#respond_to?}.
