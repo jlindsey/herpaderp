@@ -66,9 +66,15 @@ describe EmailTest::Email do
 
   it "changes the @boundary variable when a Content-Type with a boundary is parsed" do
     email = EmailTest::Email.new File.read(File.join(EmailsDir, 'otf_thread.txt')).strip
-    email.instance_variable_get(:@boundary).should == "------------090807010703040106060608"
+    email.instance_variable_get(:@boundary).should == "--------------090807010703040106060608"
   end
 
-  it "implements the .parse_thread method and return an array of parsed emails"
+  it "changes the @body instance var to an array of multi body parts when the content type is multipart" do
+    email = EmailTest::Email.new File.read(File.join(EmailsDir, 'otf_thread.txt')).strip
+    email.body.should be_an(Array)
+    email.body.each do |b|
+      b.should be_a(EmailTest::Email)
+    end
+  end
 end
 

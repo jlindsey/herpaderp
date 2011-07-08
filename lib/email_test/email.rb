@@ -113,22 +113,37 @@ module EmailTest
     end
 
     ##
-    # Parse the body out of the raw email text. Essentially grabs an offset until the end.
-    # Should do something more complex when the Content-Type is multipart.
+    # Parse the body out of the raw email text. For a simple text/plain email,
+    # it just grabs from the first empty line until the end. For a more complex
+    # multipart body, it breaks it apart at the boundary, and parses each part
+    # as a full {Email}.
     #
     # @author Josh Lindsey
     def parse_body!
-      offset = nil
+      content_type = @headers.find { |h| h.key == "Content-Type" }
 
-      if @boundary.is_a?(::String)
-        offset = @raw.index @boundary
+      if !content_type.nil? and content_type.value.include?("multipart")
+        @body = []
+
+        initial_headers_offset = @raw.index(@boundary)
+        true_body = @raw[initial_headers_offset..-1].strip
+
+        if initial_headers_offset <= 0 or initial_headers_offset.nil? or true_body.empty?
+          raise "Unable to parse body"
+        end
+
+        true_body.split(@boundary).each do |body_part|
+          # This is a hack, need to figure out what's wrong with the algorithm and fix the cause
+          next if body_part.empty? or body_part == '--'
+          @body << EmailTest::Email.new(body_part)
+        end
       else
         offset = @raw =~ @boundary
+
+        raise "Unable to parse body" if offset.nil? or offset <= 0
+
+        @body = @raw[offset..-1].strip
       end
-
-      raise "Unable to parse email body" if offset.nil? or offset <= 0
-
-      @body = @raw[offset..-1].strip
     end
 
     ##
@@ -150,7 +165,7 @@ module EmailTest
 
         if parsed.instance_of?(EmailTest::Headers::ContentType) and 
            parsed.attributes.has_key?('boundary')
-          @boundary = parsed.attributes['boundary']
+          @boundary = '--' << parsed.attributes['boundary']
         end
       end
 
