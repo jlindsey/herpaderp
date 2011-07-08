@@ -31,7 +31,6 @@ In-Reply-To: <CAKMS78BjwAQkvnCbFGoQRyWVVw+wiNOx0Uck8UhMpxnOzoLaHg@mail.gmail.com
 Content-Type: multipart/alternative;
  boundary="------------090807010703040106060608"
 
-This is a multi-part message in MIME format.
 --------------090807010703040106060608
 Content-Type: text/plain; charset=ISO-8859-1; format=flowed
 Content-Transfer-Encoding: 7bit

@@ -64,9 +64,9 @@ describe EmailTest::Email do
       be_a(EmailTest::Headers::ContentType)
   end
 
-  it "changes the @@boundary variable when a Content-Type with a boundary is parsed" do
-    @email = EmailTest::Email.new File.read('emails/otf_thread.txt')
-    @email.instance_variable_get(:@boundary).should == "------------090807010703040106060608"
+  it "changes the @boundary variable when a Content-Type with a boundary is parsed" do
+    email = EmailTest::Email.new File.read(File.join(EmailsDir, 'otf_thread.txt')).strip
+    email.instance_variable_get(:@boundary).should == "------------090807010703040106060608"
   end
 
   it "implements the .parse_thread method and return an array of parsed emails"

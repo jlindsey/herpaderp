@@ -91,7 +91,7 @@ module EmailTest
       buffer = ''
 
       @raw.each_line do |line|
-        # Break out of parsing headers if we hit the boundary
+        # Break out of parsing headers if we hit an empty line
         if (@boundary.is_a?(::Regexp) and line =~ @boundary) or
            (@boundary.is_a?(::String) and line == @boundary)
           @headers << parse_header(buffer.dup)
@@ -103,8 +103,9 @@ module EmailTest
         if line =~ /^\s+/ or buffer.empty?
           buffer << line
         else
-          # TODO: add in a Content-Type boundary check here and change the @boundary var
-          @headers << parse_header(buffer.dup)
+          parsed_header = parse_header(buffer.dup)
+
+          @headers << parsed_header
           buffer.clear
           buffer << line
         end
@@ -146,6 +147,11 @@ module EmailTest
       if EmailTest::Headers.constants.include? class_name
         header_parser = EmailTest::Headers.const_get class_name
         parsed = header_parser.new header_str
+
+        if parsed.instance_of?(EmailTest::Headers::ContentType) and 
+           parsed.attributes.has_key?('boundary')
+          @boundary = parsed.attributes['boundary']
+        end
       end
 
       parsed
